@@ -13,6 +13,7 @@ import java.sql.SQLException;
 @SpringBootApplication
 @RestController
 @RequestMapping(value="hello")
+@CrossOrigin
 public class App {
 
     public static void main(String[] args) {
