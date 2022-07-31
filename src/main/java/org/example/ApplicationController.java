@@ -33,7 +33,7 @@ public class ApplicationController {
 //        System.out.println("data:" + jsonBody);
 //    }
 
-    @CrossOrigin
+    @CrossOrigin(origins = "https://portfolio-36f14.web.app/")
     @GetMapping("/experiencias")
     public List<Experiencia> getExperiencias() {
 
