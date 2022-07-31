@@ -40,9 +40,8 @@ public class DeleteController {
     @DeleteMapping("/dlExp/{id}")
     public ResponseEntity<?> deleteExp(@PathVariable Long id){
         Map<String, Object> mensajeBody = new HashMap<>();
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
-
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
         try{
             Connection connection = dcm.getConnection();
             ExperienciaDAO experienciaDAO = new ExperienciaDAO(connection);
@@ -61,8 +60,8 @@ public class DeleteController {
     @DeleteMapping("/dlEd/{id}")
     public ResponseEntity<?> deleteEd(@PathVariable Long id){
         Map<String, Object> mensajeBody = new HashMap<>();
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
+       DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
 
         try{
             Connection connection = dcm.getConnection();
@@ -82,8 +81,8 @@ public class DeleteController {
     @DeleteMapping("/dlPro/{id}")
     public ResponseEntity<?> deletePro(@PathVariable Long id){
         Map<String, Object> mensajeBody = new HashMap<>();
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
 
         try{
             Connection connection = dcm.getConnection();
@@ -103,9 +102,8 @@ public class DeleteController {
     @DeleteMapping("/dlHab/{id}")
     public ResponseEntity<?> deleteHab(@PathVariable Long id){
         Map<String, Object> mensajeBody = new HashMap<>();
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
-
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
         try{
             Connection connection = dcm.getConnection();
             HabilidadesDAO habilidadesDAO = new HabilidadesDAO(connection);
