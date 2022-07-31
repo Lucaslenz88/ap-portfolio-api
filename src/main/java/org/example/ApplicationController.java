@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "https://portfolio-36f14.web.app/")
+@CrossOrigin
 @RestController
 @RequestMapping("/response")
 
@@ -34,7 +34,7 @@ public class ApplicationController {
 //        System.out.println("data:" + jsonBody);
 //    }
 
-    @CrossOrigin(origins = "*", allowedHeaders = "*")
+    @CrossOrigin
     @GetMapping("/experiencias")
     public List<Experiencia> getExperiencias() {
 
