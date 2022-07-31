@@ -23,7 +23,7 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
-
+    @CrossOrigin
     @RequestMapping(value="/{id}",
             method = RequestMethod.GET)
     public Usuario getUsuario(@PathVariable("id") long id) {
