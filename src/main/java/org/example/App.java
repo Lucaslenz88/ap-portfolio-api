@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.DAO.UsuarioDAO;
+import org.example.controller.DatabaseConnectionManager;
+import org.example.model.Usuario;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,7 +25,7 @@ public class App {
 
     @RequestMapping(value="/{id}",
             method = RequestMethod.GET)
-    public Usuario getUsuario( @PathVariable("id") long id) {
+    public Usuario getUsuario(@PathVariable("id") long id) {
 
         try{
             DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
