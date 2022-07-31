@@ -45,7 +45,7 @@ public class ApplicationController {
         // originPatterns = { "" },   
         
         // Access-Control-Allow-Credentials
-        allowCredentials = "false",
+        allowCredentials = "true",
         
         // Access-Control-Allow-Headers
         allowedHeaders = { "*" },
