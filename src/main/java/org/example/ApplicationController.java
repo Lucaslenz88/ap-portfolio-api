@@ -38,8 +38,8 @@ public class ApplicationController {
     public List<Experiencia> getExperiencias() {
 
         try{
-            DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                    "portfolio", "root", "");
+            DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
             Connection connection = dcm.getConnection();
             ExperienciaDAO experienciaDAO = new ExperienciaDAO(connection);
             List<Experiencia> experiencias = experienciaDAO.findAll();
@@ -56,8 +56,8 @@ public class ApplicationController {
     public ResponseEntity<?> add(@RequestBody Experiencia experiencia){
         Map<String, Object> mensajeBody = new HashMap<>();
 
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
 
         try{
             Connection connection = dcm.getConnection();
@@ -101,8 +101,8 @@ public class ApplicationController {
     public List<Educacion> getEducaciones() {
 
         try{
-            DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                    "portfolio", "root", "");
+            DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
             Connection connection = dcm.getConnection();
             EducacionDAO educacionDAO = new EducacionDAO(connection);
             List<Educacion> educaciones = educacionDAO.findAll();
@@ -117,8 +117,8 @@ public class ApplicationController {
     public List<Proyectos> getProyectos() {
 
         try{
-            DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                    "portfolio", "root", "");
+            DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
             Connection connection = dcm.getConnection();
             ProyectosDAO proyectosDAO = new ProyectosDAO(connection);
             List<Proyectos> proyectos = proyectosDAO.findAll();
@@ -134,9 +134,8 @@ public class ApplicationController {
     public ResponseEntity<?> update(@RequestBody Experiencia experiencia){
         Map<String, Object> mensajeBody = new HashMap<>();
 
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
-
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
         try{
             Connection connection = dcm.getConnection();
             ExperienciaDAO experienciaDAO = new ExperienciaDAO(connection);
@@ -156,8 +155,8 @@ public class ApplicationController {
     public ResponseEntity<?> addEd(@RequestBody Educacion educacion){
         Map<String, Object> mensajeBody = new HashMap<>();
 
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
 
         try{
             Connection connection = dcm.getConnection();
@@ -180,8 +179,8 @@ public class ApplicationController {
     public ResponseEntity<?> updateEd(@RequestBody Educacion educacion){
         Map<String, Object> mensajeBody = new HashMap<>();
 
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
 
         try{
             Connection connection = dcm.getConnection();
@@ -202,8 +201,8 @@ public class ApplicationController {
     public ResponseEntity<?> addProyecto(@RequestBody Proyectos proyectos){
         Map<String, Object> mensajeBody = new HashMap<>();
 
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
+       DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
 
         try{
             Connection connection = dcm.getConnection();
@@ -226,8 +225,8 @@ public class ApplicationController {
     public ResponseEntity<?> updatePro(@RequestBody Proyectos proyectos){
         Map<String, Object> mensajeBody = new HashMap<>();
 
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
 
         try{
             Connection connection = dcm.getConnection();
@@ -248,8 +247,8 @@ public class ApplicationController {
     public List<Habilidades> getHabilidades() {
 
         try{
-            DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                    "portfolio", "root", "");
+           DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
             Connection connection = dcm.getConnection();
             HabilidadesDAO habilidadesDAO = new HabilidadesDAO(connection);
             List<Habilidades> habilidades = habilidadesDAO.findAll();
@@ -265,8 +264,8 @@ public class ApplicationController {
     public ResponseEntity<?> addHabilidad(@RequestBody Habilidades habilidades){
         Map<String, Object> mensajeBody = new HashMap<>();
 
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
+       DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
 
         try{
             Connection connection = dcm.getConnection();
@@ -289,9 +288,8 @@ public class ApplicationController {
     public ResponseEntity<?> updatehab(@RequestBody Habilidades habilidades){
         Map<String, Object> mensajeBody = new HashMap<>();
 
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
-                "portfolio", "root", "");
-
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("bfrk7qvzp2jjvtgiz55k-mysql.services.clever-cloud.com",
+                    "bfrk7qvzp2jjvtgiz55k", "ujehqablm9ytytri", "mYEFSr3NAaDKXMRZ7q6N", "3306");
         try{
             Connection connection = dcm.getConnection();
             HabilidadesDAO habilidadesDAO = new HabilidadesDAO(connection);
